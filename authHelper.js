@@ -1,4 +1,5 @@
 // Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE.txt in the project root for license information.
+var secret = require("./secret");
 
 var credentials = {
   client: secret.client,
