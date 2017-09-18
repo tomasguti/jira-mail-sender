@@ -2,6 +2,13 @@
 
 Node.js installed and working on your development machine. 
 
+## Installing the dependencies
+
+```
+cd jira-mail-sender
+npm install
+```
+
 ## Running the app
 
 ```
