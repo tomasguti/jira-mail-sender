@@ -1,9 +1,7 @@
 // Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE.txt in the project root for license information.
+
 var credentials = {
-  client: {
-    id: 'c5150f3e-b4b4-43b6-8af0-c45d141661da',
-    secret: 'wUOmNAOOMEFWpA4OFCw5JTh',
-  },
+  client: secret.client,
   auth: {
     tokenHost: 'https://login.microsoftonline.com',
     authorizePath: 'common/oauth2/v2.0/authorize',
