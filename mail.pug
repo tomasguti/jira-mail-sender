@@ -1,0 +1,63 @@
+div(style={ 'font-size': '14px', 'font-family': 'Helvetica' })
+	p(style={ 'font-size': '16px' })
+		b
+			u Total Dev Time:
+		strike #{totalHours}h
+		b  #{remainingHours}h
+	p
+		b
+			u Comment:
+		|  #{comment}
+	p
+		b
+			u Dev time details:
+	p
+		b
+			u(style={ 'color': '#4BA524' }) Plan estimates:
+	if displayTable
+		table(style={ 'font-size': '14px', 'border-collapse': 'collapse', 'font-family': 'Helvetica' } cellpadding='6')
+			thead
+				tr
+					td(style={ 'border': '1px solid grey' })
+						center
+							b Task
+					td(style={ 'border': '1px solid grey' })
+						center
+							b Original Estimate
+					td(style={ 'border': '1px solid grey' })
+						center
+							b Remaining Estimate
+					td(style={ 'border': '1px solid grey' })
+						center
+							b Status
+					td(style={ 'border': '1px solid grey' })
+						center
+							b Comment
+			tbody
+				each issue in issues
+					tr
+						td(style={ 'border': '1px solid grey' })
+							p #{issue.key} - #{issue.summary}
+						td(style={ 'border': '1px solid grey' })
+							center #{issue.original}
+						td(style={ 'border': '1px solid grey' })
+							center #{issue.remaining}
+						td(style={ 'border': '1px solid grey' })
+							center #{issue.status}
+						td(style={ 'border': '1px solid grey' })
+							p #{issue.comment}
+				tr
+					td(style={ 'border': '1px solid grey' })
+						center
+							b Total
+					td(style={ 'border': '1px solid grey' })
+						center
+							b #{totalHours}
+					td(style={ 'border': '1px solid grey' })
+						center
+							b #{remainingHours}
+					td(style={ 'border': '0px solid white' })
+						p  
+					td(style={ 'border': '0px solid white' })
+						p  
+							
